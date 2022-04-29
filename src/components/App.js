@@ -1,7 +1,19 @@
+import Input from './Input';
+import Output from './Output';
+
 const App = () => {
   return (
     <div>
-      <h1 className="text-red-500">App</h1>
+      <header>
+        <div>
+          <p>SPLI</p>
+          <p>TTER</p>
+        </div>
+      </header>
+      <main>
+        <Input />
+        <Output />
+      </main>
     </div>
   );
 };
