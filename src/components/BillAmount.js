@@ -8,7 +8,7 @@ const BillAmount = () => {
   return (
     <form>
       <label htmlFor="bill-amount">
-        Bill
+        <h3 className="text-dark-grayish-cyan font-semibold">Bill</h3>
         <div className="relative">
           <input
             className="relative w-full p-4 bg-very-light-gray-cyan mt-2 focus:outline-0 text-right text-very-dark-cyan font-semibold text-2xl"

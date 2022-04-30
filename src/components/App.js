@@ -10,7 +10,7 @@ const App = () => {
           <p>TTER</p>
         </div>
       </header>
-      <main className="w-screen h-screen p-6 bg-pure-white rounded-t-3xl">
+      <main className="w-screen h-screen p-8 bg-pure-white rounded-t-3xl">
         <Input />
         <Output />
       </main>

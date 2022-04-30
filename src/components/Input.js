@@ -4,7 +4,7 @@ import Guests from './Guests';
 
 const Input = () => {
   return (
-    <div>
+    <div className="flex flex-col space-y-8">
       <BillAmount />
       <TipPercentage />
       <Guests />
