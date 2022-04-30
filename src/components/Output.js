@@ -27,8 +27,10 @@ const Output = () => {
         </div>
       </div>
 
-      <div className="text-center w-full bg-strong-cyan text-lg rounded-md py-2 flex-wrap ">
-        <button>RESET</button>
+      <div className="hover:cursor-pointer">
+        <button className="bg-strong-cyan text-lg rounded-md py-2 w-full text-center hover:bg-hover-cyan">
+          RESET
+        </button>
       </div>
     </div>
   );
