@@ -9,7 +9,7 @@ const BillAmount = ({ setBill, billAmount }) => {
       <div className="relative">
         <label htmlFor="bill-amount"></label>
         <input
-          className="relative w-full p-4 bg-very-light-gray-cyan mt-2 rounded-md focus:outline-hover-cyan active:outline-hover-cyan text-right text-very-dark-cyan font-semibold text-2xl"
+          className="relative w-full p-2 bg-very-light-gray-cyan mt-2 rounded-md focus:outline-hover-cyan active:outline-hover-cyan text-right text-very-dark-cyan font-semibold text-2xl"
           type="number"
           value={billAmount}
           id="bill-amount"
@@ -17,7 +17,7 @@ const BillAmount = ({ setBill, billAmount }) => {
           onChange={(e) => setBill(e.target.value)}
         />
         <img
-          className="absolute top-[34px] left-4"
+          className="absolute top-[24px] left-4"
           src={dollar}
           alt="dollar sign"
         />
