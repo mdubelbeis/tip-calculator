@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import person from '../images/icon-person.svg';
 const Guests = () => {
-  const [guests, setGuests] = useState(0);
+  const [guests, setGuests] = useState(1);
   return (
     <form>
       <label htmlFor="guests">
