@@ -56,7 +56,7 @@ const App = () => {
   return (
     <div className="flex flex-col h-screen items-center xl:justify-center">
       <header className="p-8 text-center font-semibold tracking-[8px] xl:pt-0 xl:pb-16">
-        <div className="text-very-dark-cyan text-4xl">
+        <div className="text-very-dark-cyan text-xl">
           <h1 className="flex flex-col">
             <span>SPLI</span>
             <span>TTER</span>
