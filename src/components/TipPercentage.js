@@ -6,7 +6,7 @@ const TipPercentage = () => {
       <h3 className="text-dark-grayish-cyan font-semibold">
         Select Tip %
       </h3>
-      <div className="mt-2 grid grid-cols-2 gap-4 text-center">
+      <div className="mt-2 grid grid-cols-2 gap-4 text-center xl:grid-cols-3">
         <PercentageButton amount={5} />
         <PercentageButton amount={10} />
         <PercentageButton amount={15} />
