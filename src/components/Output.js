@@ -10,7 +10,7 @@ const Output = ({ tipPerPerson, totalPerPerson, resetValues }) => {
             </p>
           </div>
           <div>
-            <p className="text-strong-cyan text-2xl font-semibold">{`$${tipPerPerson}`}</p>
+            <p className="text-strong-cyan text-4xl font-semibold">{`$${tipPerPerson}`}</p>
           </div>
         </div>
 
@@ -22,7 +22,7 @@ const Output = ({ tipPerPerson, totalPerPerson, resetValues }) => {
             </p>
           </div>
           <div>
-            <p className="text-strong-cyan text-2xl font-semibold">{`$${totalPerPerson}`}</p>
+            <p className="text-strong-cyan text-4xl font-semibold">{`$${totalPerPerson}`}</p>
           </div>
         </div>
       </div>
