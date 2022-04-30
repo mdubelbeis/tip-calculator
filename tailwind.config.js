@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         'strong-cyan': 'hsl(172, 67%, 45%)',
+        'hover-cyan': '#9FE8DF',
         'light-blue': '#C5E4E7',
         'very-dark-cyan': 'hsl(183, 100%, 15%)',
         'dark-grayish-cyan': 'hsl(186, 14%, 43%)',
