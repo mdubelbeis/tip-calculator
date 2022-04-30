@@ -1,15 +1,7 @@
 const PercentageButton = ({ amount }) => {
-  const bgColor =
-    amount === 'Custom'
-      ? 'bg-very-light-gray-cyan'
-      : 'bg-very-dark-cyan';
-
-  const textColor =
-    amount === 'Custom' ? 'text-very-dark-cyan' : 'text-pure-white';
-
   return (
     <div
-      className={`p-2 rounded-md font-semibold text-2xl ${bgColor} ${textColor} hover:bg-strong-cyan`}
+      className={`p-2 rounded-md bg-very-dark-cyan font-semibold text-2xl text-pure-white hover:bg-strong-cyan hover:cursor-pointer`}
     >
       {amount === 'Custom' ? `${amount}` : `${amount}%`}
     </div>
