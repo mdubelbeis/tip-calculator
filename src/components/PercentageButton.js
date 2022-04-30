@@ -19,7 +19,7 @@ const PercentageButton = ({ setTip, custom }) => {
       ${custom > tip ? 'nonSelected' : 'null'}`}
       onClick={() => onButtonClick(tip, index)}
     >
-      {tip}
+      {`${tip}%`}
     </button>
   ));
 
