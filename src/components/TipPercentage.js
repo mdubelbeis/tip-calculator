@@ -12,7 +12,18 @@ const TipPercentage = () => {
         <PercentageButton amount={15} />
         <PercentageButton amount={25} />
         <PercentageButton amount={50} />
-        <PercentageButton amount={'Custom'} />
+        {/* <PercentageButton amount={'Custom'} /> */}
+        <div>
+          <form action="">
+            <label htmlFor="">
+              <input
+                className="p-2 w-32 text-right focus:outline-strong-cyan rounded-md font-semibold text-2xl hover:cursor-pointer bg-very-light-gray-cyan text-very-dark-cyan"
+                type="input"
+                placeholder="Custom"
+              />
+            </label>
+          </form>
+        </div>
       </div>
     </div>
   );
