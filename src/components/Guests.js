@@ -19,33 +19,32 @@ const Guests = ({ setGuests, noOfGuests }) => {
 
   return (
     <form onSubmit={(e) => e.preventDefault()}>
-      <label htmlFor="guests">
-        <div className="flex items-center justify-between">
-          <h3 className="text-dark-grayish-cyan font-semibold">
-            Number of People
-          </h3>
-          {noOfGuests < 1 && (
-            <p className="text-[12px] text-red-500 mt-1">
-              Can't be zero
-            </p>
-          )}
-        </div>
-        <div className="relative">
-          <input
-            className={`relative w-full p-2 bg-very-light-gray-cyan mt-2 ${borderSize} ${borderColor} ${outlineColor} text-right text-very-dark-cyan font-semibold text-2xl rounded-md`}
-            type="number"
-            value={noOfGuests}
-            id="guests"
-            placeholder="0"
-            onChange={(e) => setGuests(e.target.value)}
-          />
-          <img
-            className="absolute top-[25px] left-4"
-            src={person}
-            alt="person icon"
-          />
-        </div>
-      </label>
+      <div className="flex items-center justify-between">
+        <span className="text-dark-grayish-cyan font-semibold">
+          Number of People
+        </span>
+        {noOfGuests < 1 && (
+          <p className="text-[12px] text-red-500 mt-1">
+            Can't be zero
+          </p>
+        )}
+      </div>
+      <div className="relative">
+        <label htmlFor="guests"></label>
+        <input
+          className={`relative w-full p-2 bg-very-light-gray-cyan mt-2 ${borderSize} ${borderColor} ${outlineColor} text-right text-very-dark-cyan font-semibold text-2xl rounded-md`}
+          type="number"
+          value={noOfGuests}
+          id="guests"
+          placeholder="0"
+          onChange={(e) => setGuests(e.target.value)}
+        />
+        <img
+          className="absolute top-[25px] left-4"
+          src={person}
+          alt="person icon"
+        />
+      </div>
     </form>
   );
 };
