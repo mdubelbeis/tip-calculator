@@ -40,7 +40,7 @@ const Guests = ({ setGuests, noOfGuests }) => {
           onChange={(e) => setGuests(e.target.value)}
         />
         <img
-          className="absolute top-[25px] left-4"
+          className="absolute top-[24px] left-4"
           src={person}
           alt="person icon"
         />
