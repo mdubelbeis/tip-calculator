@@ -14,9 +14,9 @@ const TipPercentage = ({ setTip, setCustomTip, customTipAmount }) => {
 
   return (
     <div>
-      <h3 className="text-dark-grayish-cyan font-semibold">
+      <h2 className="text-dark-grayish-cyan font-semibold">
         Select Tip %
-      </h3>
+      </h2>
       <div className="mt-2 grid grid-cols-2 gap-4 text-center xl:grid-cols-3">
         <PercentageButton custom={custom} setTip={setTip} />
         <div>
