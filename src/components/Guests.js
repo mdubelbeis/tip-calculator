@@ -1,25 +1,46 @@
 import { useState } from 'react';
 
 import person from '../images/icon-person.svg';
-const Guests = () => {
-  const [guests, setGuests] = useState(1);
+const Guests = ({ setGuests, noOfGuests }) => {
+  // const [noOfGuests, setNoOfGuests] = useState(1);
+
+  const borderColor = noOfGuests < 1 ? 'border-red-500' : '';
+  const borderSize = noOfGuests < 1 ? 'border-2' : '';
+  const outlineColor =
+    noOfGuests < 1
+      ? 'focus:outline-red-500'
+      : 'focus:outline-hover-cyan';
+
+  // const onInputChange = (e) => {
+  //   const value = parseInt(e.target.value);
+  //   setNoOfGuests(value);
+  //   setGuests(value);
+  // };
+
   return (
-    <form>
+    <form onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="guests">
-        <h3 className="text-dark-grayish-cyan font-semibold">
-          Number of People
-        </h3>
+        <div className="flex items-center justify-between">
+          <h3 className="text-dark-grayish-cyan font-semibold">
+            Number of People
+          </h3>
+          {noOfGuests < 1 && (
+            <p className="text-[12px] text-red-500 mt-1">
+              Can't be zero
+            </p>
+          )}
+        </div>
         <div className="relative">
           <input
-            className="relative w-full p-4 bg-very-light-gray-cyan mt-2 focus:outline-hover-cyan text-right text-very-dark-cyan font-semibold text-2xl"
-            type="text"
-            value={guests}
+            className={`relative w-full p-2 bg-very-light-gray-cyan mt-2 ${borderSize} ${borderColor} ${outlineColor} text-right text-very-dark-cyan font-semibold text-2xl rounded-md`}
+            type="number"
+            value={noOfGuests}
             id="guests"
+            placeholder="0"
             onChange={(e) => setGuests(e.target.value)}
-            onClick={(e) => setGuests('')}
           />
           <img
-            className="absolute top-[34px] left-4"
+            className="absolute top-[25px] left-4"
             src={person}
             alt="person icon"
           />

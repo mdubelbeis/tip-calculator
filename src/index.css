@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.selected {
+  @apply bg-strong-cyan;
+}
+
+.nonSelected {
+  @apply bg-very-dark-cyan;
+}
